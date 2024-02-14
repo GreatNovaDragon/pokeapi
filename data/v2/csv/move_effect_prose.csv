@@ -1,3 +1,4 @@
+move_effect_id,local_language_id,short_effect,effect
 1,6,Fügt normalen Schaden zu ohne Weiteren Effekt.,Inflicts [regular damage]{mechanic:regular-damage}.
 2,6,Das Ziel wird zu Schlaf gesetzt,Puts the target to [sleep]{mechanic:sleep}.
 3,6,Hat eine $effect_chance% Chance das Ziel zu [vergiften]{mechanic:poison}.,Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to [poison]{mechanic:poison} the target.
@@ -2254,4 +2255,3 @@ This move cannot be selected by []{move:sleep-talk}."
 274,9,Has a $effect_chance% chance to [burn]{mechanic:burn} the target and a $effect_chance% chance to make the target flinch.,Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to [burn]{mechanic:burn} the target and a separate $effect_chance% chance to make the target [flinch]{mechanic:flinch}.
 366,9,"Takes one turn to charge, then raises the user's Special Attack, Special Defense, and Speed by two stages.","Takes one turn to charge, then raises the user's Special Attack, Special Defense, and Speed by two stages."
 367,9,Raises the Defense and Special Defense of all friendly Pokémon with []{ability:plus} or []{ability:minus} by one stage.,Raises the Defense and Special Defense of all friendly Pokémon with []{ability:plus} or []{ability:minus} by one stage.
-move_effect_id,local_language_id,short_effect,effect
