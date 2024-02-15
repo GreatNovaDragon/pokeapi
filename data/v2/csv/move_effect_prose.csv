@@ -50,7 +50,7 @@ Has a 3/8 chance each to hit 2 or 3 times, and a ⅛ chance each to hit 4 or 5 t
 If the user is holding []{item:light-clay}, the barrier lasts for eight turns.
 
 []{move:brick-break} or []{move:defog} used by an opponent will destroy the barrier."
-37,6,"Hat die $effect_chance% chance to [burn]{mechanic:burn}, [freeze]{mechanic:freeze}, or [paralyze]{mechanic:paralysis} the target.","Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to [burn]{mechanic:burn}, [freeze]{mechanic:freeze}, or [paralyze]{mechanic:paralyze} the target.  One of these effects is selected at random; they do not each have independent chances to occur."
+37,6,"Hat die $effect_chance% Chance das Ziel zu [verbrennen]{mechanic:burn}, [einzufrieren]{mechanic:freeze} oder zu [paralysieren]{mechanic:paralysis}.","Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to [burn]{mechanic:burn}, [freeze]{mechanic:freeze}, or [paralyze]{mechanic:paralyze} the target.  One of these effects is selected at random; they do not each have independent chances to occur."
 38,6,Anwender schläft für 2 Runden und heilt seine maximalen HP.,"User falls to [sleep]{mechanic:sleep} and immediately regains all its [HP]{mechanic:hp}.  If the user has another [major status effect]{mechanic:major-status-effect}, [sleep]{mechanic:sleep} will replace it.  The user will always wake up after two turns, or one turn with []{ability:early-bird}.
 
 This move [fail]{mechanic:fail}s if the Pokémon cannot fall asleep due to []{move:uproar}, []{ability:insomnia}, or []{ability:vital-spirit}.  It also fails if the Pokémon is at full health or is already asleep."
@@ -168,29 +168,29 @@ If the target hasn't used a move since entering the [field]{mechanic:field}, if 
 92,6,Setzt die KP des Ziels und des Anwenders auf den Durchschnitt iherer aktuellen KP.,"Changes the user's and target's remaining [HP]{mechanic:hp} to the average of their current remaining [HP]{mechanic:hp}.  Ignores [accuracy]{mechanic:accuracy} and [evasion]{mechanic:evasion} modifiers.  This effect does not count as inflicting damage for other moves and effects that respond to damage taken.
 
 This effect [fail]{mechanic:fail}s against a []{move:substitute}."
-93,6,Has a $effect_chance% chance to make the target flinch.  Only works if the user is sleeping.,Only usable if the user is [sleep]{mechanic:sleep}ing.  Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to make the target []{mechanic:flinch}.
-94,6,Changes the user's type to a random type either resistant or immune to the last move used against it.,"Changes the user's type to a type either resistant or immune to the last damaging move that hit it.  The new type is selected at random and cannot be a type the user already is.  If there is no eligible new type, this move will [fail]{mechanic:fail}."
-95,6,Ensures that the user's next move will hit the target.,"If the user targets the same target again before the end of the next turn, the move it uses is guaranteed to hit.  This move itself also ignores [accuracy]{mechanic:accuracy} and [evasion]{mechanic:evasion} modifiers.
+93,6,Hat eine $effect_chance% Chance dass das Ziel zurückzuckt. Funktioniert nur wenn der Anwender schläft.,Only usable if the user is [sleep]{mechanic:sleep}ing.  Inflicts [regular damage]{mechanic:regular-damage}.  Has a $effect_chance% chance to make the target []{mechanic:flinch}.
+94,6,"Ändert den Typ des Anwendes so, dass er gegen den Typ der vom Gegner zuletzt eingesetzten Attacke entweder immun oder resistent ist.","Ändert den Typ des Anwendes so, dass er gegen den Typ der vom Gegner zuletzt eingesetzten Attacke entweder immun oder resistent ist."
+95,6,Versichert das der nächste Angriff des Benutzers garantiert trifft.,"If the user targets the same target again before the end of the next turn, the move it uses is guaranteed to hit.  This move itself also ignores [accuracy]{mechanic:accuracy} and [evasion]{mechanic:evasion} modifiers.
 
 One-hit KO moves are also guaranteed to hit, as long as the user is equal or higher level than the target.  This effect also allows the user to hit Pokémon that are off the field due to moves such as []{move:dig} or []{move:fly}.
 
 If the target uses []{move:detect} or []{move:protect} while under the effect of this move, the user is not guaranteed to hit, but has a (100 - accuracy)% chance to break through the protection.
 
 This effect is passed on by []{move:baton-pass}."
-96,6,Permanently becomes the target's last used move.,"Permanently replaces itself with the target's last used move.  If that move is []{move:chatter} or []{move:struggle}, this move will [fail]{mechanic:fail}.
+96,6,Anwender erlernt die letzte Attacke des Zieles dauerhaft. Diese Attacke wird danach vergessen.,"Permanently replaces itself with the target's last used move.  If that move is []{move:chatter} or []{move:struggle}, this move will [fail]{mechanic:fail}.
 
 This move cannot be copied by []{move:mimic} or []{move:mirror-move}, nor selected by []{move:assist} or []{move:metronome}, nor forced by []{move:encore}."
-98,6,Randomly uses one of the user's other three moves.  Only works if the user is sleeping.,"Only usable if the user is [sleep]{mechanic:sleep}ing.  Randomly selects and uses one of the user's other three moves.  Use of the selected move requires and costs 0 [PP]{mechanic:pp}.
+98,6,"Anwender setzt per Zufall eine ihm bekannte Attacke ein. Klappt nur, wenn der Anwender gerade schläft. ","Only usable if the user is [sleep]{mechanic:sleep}ing.  Randomly selects and uses one of the user's other three moves.  Use of the selected move requires and costs 0 [PP]{mechanic:pp}.
 
 This move will not select []{move:assist}, []{move:bide}, []{move:bounce}, []{move:chatter}, []{move:copycat}, []{move:dig}, []{move:dive}, []{move:fly}, []{move:focus-punch}, []{move:me-first}, []{move:metronome}, []{move:mirror-move}, []{move:shadow-force}, []{move:skull-bash}, []{move:sky-attack}, []{move:sky-drop}, []{move:sleep-talk}, []{move:solar-beam}, []{move:razor-wind}, or []{move:uproar}.
 
 If the selected move requires a recharge turn—i.e., one of []{move:blast-burn}, []{move:frenzy-plant}, []{move:giga-impact}, []{move:hydro-cannon}, []{move:hyper-beam}, []{move:roar-of-time}, or []{move:rock-wrecker}—and the user is still [sleep]{mechanic:sleep}ing next turn, then it's forced to use this move again and pay another [PP]{mechanic:pp} for the recharge turn.
 
 This move cannot be copied by []{move:mirror-move}, nor selected by []{move:assist}, []{move:metronome}, or []{move:sleep-talk}."
-99,6,"If the user faints this turn, the target automatically will, too.","If the user [faints]{mechanic:faints} before its next move, the Pokémon that [faint]{mechanic:faint}ed it will automatically [faint]{mechanic:faint}.  End-of-turn damage is ignored.
+99,6,"Wird der Anwender nach Einsatz dieser Attacke kampfunfähig, führt dies auch beim Pokémon, das ihn besiegt hat, zum K.O. Scheitert bei Wiederholung. ","If the user [faints]{mechanic:faints} before its next move, the Pokémon that [faint]{mechanic:faint}ed it will automatically [faint]{mechanic:faint}.  End-of-turn damage is ignored.
 
 This move cannot be selected by []{move:assist} or []{move:metronome}."
-100,6,"Inflicts more damage when the user has less HP remaining, with a maximum of 200 power.","Inflicts [regular damage]{mechanic:regular-damage}.  Power varies inversely with the user's proportional remaining [HP]{mechanic:hp}.
+100,6,"Schädigt den Gegner. Die Stärke der Attacke ist umso höher, je weniger KP der Anwender besitzt; mit einem Maximum von 200.","Inflicts [regular damage]{mechanic:regular-damage}.  Power varies inversely with the user's proportional remaining [HP]{mechanic:hp}.
 
 64 * current HP / max HP | Power
 -----------------------: | ----:
@@ -201,30 +201,30 @@ This move cannot be selected by []{move:assist} or []{move:metronome}."
 22–42                    |   40
 43–64                    |   20
 "
-101,6,Lowers the PP of the target's last used move by 4.,"Lowers the PP of the target's last used move by 4.  If the target hasn't used a move since entering the [field]{mechanic:field}, if it tried to use a move this turn and [failed]{mechanic:failed}, or if its last used move has 0 PP remaining, this move will fail."
-102,6,Cannot lower the target's HP below 1.,Inflicts [regular damage]{mechanic:regular-damage}.  Will not reduce the target's [HP]{mechanic:hp} below 1.
-103,6,Cures the entire party of major status effects.,Removes [major status effects]{mechanic:major-status-effects} and [confusion]{mechanic:confusion} from every Pokémon in the user's party.
-104,6,Inflicts regular damage with no additional effect.,Inflicts [regular damage]{mechanic:regular-damage}.
-105,6,"Hits three times, increasing power by 100% with each successful hit.","Inflicts [regular damage]{mechanic:regular-damage}.  Hits three times in the same turn.  The second hit has double power, and the third hit has triple power.  Each hit has a separate [accuracy]{mechanic:accuracy} check, and this move stops if a hit misses.
+101,6,"AP der letzten Attacke des Zieles werden um 4 gesenkt. ","Lowers the PP of the target's last used move by 4.  If the target hasn't used a move since entering the [field]{mechanic:field}, if it tried to use a move this turn and [failed]{mechanic:failed}, or if its last used move has 0 PP remaining, this move will fail."
+102,6,"Ein Angriff, der dem Ziel zumindest 1 KP lässt. ",Inflicts [regular damage]{mechanic:regular-damage}.  Will not reduce the target's [HP]{mechanic:hp} below 1.
+103,6,"Heilt alle im Team befindlichen Pokémon von allen primären Statusveränderungen. ",Removes [major status effects]{mechanic:major-status-effects} and [confusion]{mechanic:confusion} from every Pokémon in the user's party.
+104,6,Fügt normalen Schaden zu ohne weiteren Effekt. Hat Priorität.,Inflicts [regular damage]{mechanic:regular-damage}.
+105,6,Trifft das Ziel ein- bis dreimal nacheinander. Die Stärke erhöht sich um 10 bei jedem Treffer.,"Inflicts [regular damage]{mechanic:regular-damage}.  Hits three times in the same turn.  The second hit has double power, and the third hit has triple power.  Each hit has a separate [accuracy]{mechanic:accuracy} check, and this move stops if a hit misses.
 
 []{ability:skill-link} does not apply."
-106,6,Takes the target's item.,"Inflicts [regular damage]{mechanic:regular-damage}.  If the target is holding an item and the user is not, the user will permanently take the item.  Damage is still inflicted if an item cannot be taken.
+106,6,Nimmt das Item des Ziels.,"Inflicts [regular damage]{mechanic:regular-damage}.  If the target is holding an item and the user is not, the user will permanently take the item.  Damage is still inflicted if an item cannot be taken.
 
 Pokémon with []{ability:sticky-hold} or []{ability:multitype} are immune to the item theft effect.
 
 The target cannot recover its item with []{move:recycle}.
 
 This move cannot be selected by []{move:assist} or []{move:metronome}."
-107,6,Prevents the target from leaving battle.,"The target cannot [switch out]{mechanic:switch-out} normally.  Ignores [accuracy]{mechanic:accuracy} and [evasion]{mechanic:evasion} modifiers.  This effect ends when the user leaves the [field]{mechanic:field}.
+107,6,Verhindert dass das Ziel den Kampf verlassen kann.,"The target cannot [switch out]{mechanic:switch-out} normally.  Ignores [accuracy]{mechanic:accuracy} and [evasion]{mechanic:evasion} modifiers.  This effect ends when the user leaves the [field]{mechanic:field}.
 
 The target may still escape by using []{move:baton-pass}, []{move:u-turn}, or a []{item:shed-shell}.
 
 Both the user and the target pass on this effect with []{move:baton-pass}."
-108,6,Target loses ¼ its max HP every turn as long as it's asleep.,"Only works on [sleep]{mechanic:sleep}ing Pokémon.  Gives the target a nightmare, damaging it for ¼ its max [HP]{mechanic:hp} every turn.  If the target wakes up or leaves the [field]{mechanic:field}, this effect ends."
-109,6,Raises the user's evasion by two stages.,"Raises the user's [evasion]{mechanic:evasion} by two [stages]{mechanic:stage}.
+108,6,Ziel verliert ¼ seiner maximalen KP in jeder seiner Runde während es schläft.,"Only works on [sleep]{mechanic:sleep}ing Pokémon.  Gives the target a nightmare, damaging it for ¼ its max [HP]{mechanic:hp} every turn.  If the target wakes up or leaves the [field]{mechanic:field}, this effect ends."
+109,6,Erhöht den Ausweichwert des Benutzers um zwei Stufen.,"Raises the user's [evasion]{mechanic:evasion} by two [stages]{mechanic:stage}.
 
 []{move:stomp} and []{move:steamroller} have double power against Pokémon that have used this move since entering the [field]{mechanic:field}."
-110,6,Ghosts pay half their max HP to hurt the target every turn.  Others decrease Speed but raise Attack and Defense.,"If the user is a []{type:ghost}: user pays half its max [HP]{mechanic:hp} to place a curse on the target, damaging it for ¼ its max [HP]{mechanic:hp} every turn.
+110,6,Pokemon von Typ Geist verlieren die Hälfte ihrer Maximalen KP um das Ziel jede Runde zu Schaden. Andere senken ihre Initiative um eine Stufe um Ihren Angriff und ihre Verteidigung um eine Stufe zu erhöhen.,"If the user is a []{type:ghost}: user pays half its max [HP]{mechanic:hp} to place a curse on the target, damaging it for ¼ its max [HP]{mechanic:hp} every turn.
 Otherwise: Lowers the user's [Speed]{mechanic:speed} by one [stage]{mechanic:stage}, and raises its [Attack]{mechanic:attack} and [Defense]{mechanic:defense} by one [stage]{mechanic:stage} each.
 
 The curse effect is passed on by []{move:baton-pass}.
@@ -1318,8 +1318,8 @@ This move cannot be selected by []{move:assist} or []{move:metronome}."
 101,9,Lowers the PP of the target's last used move by 4.,"Lowers the PP of the target's last used move by 4.  If the target hasn't used a move since entering the [field]{mechanic:field}, if it tried to use a move this turn and [failed]{mechanic:failed}, or if its last used move has 0 PP remaining, this move will fail."
 102,9,Cannot lower the target's HP below 1.,Inflicts [regular damage]{mechanic:regular-damage}.  Will not reduce the target's [HP]{mechanic:hp} below 1.
 103,9,Cures the entire party of major status effects.,Removes [major status effects]{mechanic:major-status-effects} and [confusion]{mechanic:confusion} from every Pokémon in the user's party.
-104,9,Inflicts regular damage with no additional effect.,Inflicts [regular damage]{mechanic:regular-damage}.
-105,9,"Hits three times, increasing power by 100% with each successful hit.","Inflicts [regular damage]{mechanic:regular-damage}.  Hits three times in the same turn.  The second hit has double power, and the third hit has triple power.  Each hit has a separate [accuracy]{mechanic:accuracy} check, and this move stops if a hit misses.
+104,9,Inflicts regular damage with no additional effect. Has Priority,Inflicts [regular damage]{mechanic:regular-damage}.
+105,9,"Hits three times, increasing power by 10 with each successful hit.","Inflicts [regular damage]{mechanic:regular-damage}.  Hits three times in the same turn. The first hit has the Base Power, while every following hit adds 10 Power to the previous hit. Each hit has a separate [accuracy]{mechanic:accuracy} check, and this move stops if a hit misses.
 
 []{ability:skill-link} does not apply."
 106,9,Takes the target's item.,"Inflicts [regular damage]{mechanic:regular-damage}.  If the target is holding an item and the user is not, the user will permanently take the item.  Damage is still inflicted if an item cannot be taken.
